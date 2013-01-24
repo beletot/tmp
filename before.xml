@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<samlp:Response xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" ID="lgpmebicjhmiaaobfkgjoogdklilmjneegokgloa" IssueInstant="2012-02-17T08:45:46Z" Version="2.0" Destination="https://www.google.com/a/epfc.eu/acs" InResponseTo="khcflbkojdgmjfidkfjnpmmoijkdiddnpkcjbgik">
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/>
+            <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <Reference URI="">
+                <Transforms>
+                    <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                </Transforms>
+                <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <DigestValue/>
+            </Reference>
+        </SignedInfo>
+        <SignatureValue/>
+        <KeyInfo>
+            <KeyValue/>
+        </KeyInfo>
+    </Signature>
+        <samlp:Status>
+                <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+        </samlp:Status>
+        <Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" ID="phfcgbfcikiokhpikkdlojhmcedgndkllfdjdbcb" IssueInstant="2012-02-17T08:45:46Z" Version="2.0">
+                <Issuer/>
+                <Subject>
+                        <NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">
+                                beletot
+                        </NameID>
+                        <SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                                <SubjectConfirmationData Recipient="https://www.google.com/a/epfc.eu/acs" NotOnOrAfter="2012-02-17T08:55:46Z" InResponseTo="khcflbkojdgmjfidkfjnpmmoijkdiddnpkcjbgik"/>
+                        </SubjectConfirmation>
+                </Subject>
+                <Conditions NotBefore="2012-02-17T08:40:46Z" NotOnOrAfter="2012-02-17T08:55:46Z">
+                        <AudienceRestriction>
+                                <Audience>https://www.google.com/a/epfc.eu/acs</Audience>
+                        </AudienceRestriction>
+                </Conditions>
+                <AuthnStatement AuthnInstant="2012-02-17T08:45:46Z">
+                        <AuthnContext>
+                                <AuthnContextClassRef>
+                                        urn:oasis:names:tc:SAML:2.0:ac:classes:Password
+                                </AuthnContextClassRef>
+                        </AuthnContext>
+                </AuthnStatement>
+        </Assertion>
+</samlp:Response>

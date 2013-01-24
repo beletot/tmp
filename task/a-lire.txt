@@ -1,0 +1,7 @@
+php -f C:\Data\SMIG\Programmes\be-testing\test-write.php
+
+php for filename
+- ??
+
+execute php en ligne de commande
+http://www.manuelphp.com/php/features.commandline.php

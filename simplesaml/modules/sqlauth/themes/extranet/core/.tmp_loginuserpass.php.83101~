@@ -1,0 +1,52 @@
+<?php
+echo 'TMP cookie name '.$_COOKIE[session_name()];
+$this->data['icon'] = 'lock.png';
+$this->data['header'] = $this->t('{login:user_pass_header}');
+
+if (strlen($this->data['username']) > 0) {
+    $this->data['autofocus'] = 'password';
+} else {
+    $this->data['autofocus'] = 'username';
+}
+$this->includeAtTemplateBase('includes/header.php');
+?>
+<?php
+if ($this->data['errorcode'] !== NULL) {
+    
+?>
+<div style="border-left: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; background: #f5f5f5">
+    <img src="/<?php echo $this->data['baseurlpath']; ?>resources/icons/bomb.png" style="float: left; margin: 15px "/><h2>
+        <?php echo $this->t('{login:error_header}'); ?>
+    </h2>
+    <p>
+        <b>
+            <?php echo $this->t('{errors:title_'.$this->data['errorcode'].'}'); ?>
+        </b>
+    </p>
+    <p>
+        <?php echo $this->t('{errors:descr_'.$this->data['errorcode'].'}'); ?>
+    </p>
+</div>
+<?php
+}
+?>
+<div class="box-3 deepest">
+    txt d'intro 
+    <form action="?" method="post" name="f">
+        <span style="display: block;" class="niftyquick"><span class="yoo-login"><span class="login"><span class="username"><input type="text" onfocus="if(this.value=='Identifiant') this.value='';" onblur="if(this.value=='') this.value='Identifiant';" value="Identifiant" name="username" tabindex="1" id="username" size="18"></span><span class="password"><input type="password" onfocus="if(this.value=='Mot de passe') this.value='';" onblur="if(this.value=='') this.value='Mot de passe';" value="Mot de passe" alt="Mot de passe" size="10" name="password" tabindex="2" id="password"></span><span class="login-button">
+                        <button title="Connexion" type="submit" name="Submit" value="S'identifier" tabindex="4">
+                            S'identifier
+                        </button>
+                    </span><span class="lostpassword"><a title="Mot de passe oublié ?" href="/extranet-epfc/index.php?option=com_user&amp;view=reset"></a></span><span class="lostusername"><a title="Identifiant oublié ?" href="/extranet-epfc/index.php?option=com_user&amp;view=remind"></a></span></span></span></span>
+        <?php
+        foreach ($this->data['stateparams'] as $name=>$value) {
+            echo('<input type="hidden" name="'.htmlspecialchars($name).'" value="'.htmlspecialchars($value).'" />');
+        }
+        ?>
+    </form>
+    <?php
+    echo('<h2>'.$this->t('{login:help_header}').'</h2>');
+    echo('<p>'.$this->t('{login:help_text}').'</p>');
+    $this->includeAtTemplateBase('includes/footer.php');
+    ?>
+</div>

@@ -1,0 +1,8 @@
+explorer.exe "C:\wamp\"
+
+php -f C:\wamp\www\task-manager\test-write.php
+
+C:\wamp\bin\php\php5.3.5\php.exe -f C:\wamp\www\task-manager\test-write.php
+C:\wamp\bin\php\php5.3.5\php.exe -f C:\wamp\www\task-manager\test-write.php
+
+C:\wamp\bin\php\php5.3.5\php.exe -f C:\wamp\www\extranet-update\create-mab-thunderbird\creation-sql\index.php

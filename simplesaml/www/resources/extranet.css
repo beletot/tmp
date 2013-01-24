@@ -1,0 +1,194 @@
+/*
+ simplesaml css extranet epfc
+ bertrand letot
+ copier les images du template vers ce dossier
+ */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+body {
+	background: url(page_bg_img.jpg) 50% 0 no-repeat;
+	color: #646464;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+}
+div{
+	margin:0;
+	padding:0;
+	border-collapse:collapse;
+}
+
+h2.header{
+	font-size: 32px;
+	color: #2F66A7;
+	margin:5px 0 20px 0;
+}
+div.box-3 {
+    /*background: transparent url(module_headerposition_m.png) repeat scroll 0 0;*/
+    /*height: 75px;*/
+    overflow: hidden;
+    padding: 10px 5px 0;
+    color: #646464;
+}
+/*
+ * module: rounded
+ */
+
+div.mod-rounded div.box-t1 {
+	background: url(module_rounded_tl.png) 0 0 no-repeat;
+}
+
+div.mod-rounded div.box-t2 {
+	padding: 0px 10px 0px 10px;
+	background: url(module_rounded_tr.png) 100% 0 no-repeat;
+}
+
+div.mod-rounded div.box-t3 {
+	height: 15px;
+	background: url(module_rounded_t.png) 0 0 repeat-x;
+}
+
+div.mod-rounded div.box-1 {
+	background: url(module_rounded_l.png) 0 0 repeat-y;
+}
+
+div.mod-rounded div.box-2 {
+	padding: 0px 5px 0px 5px;
+	background: url(module_rounded_r.png) 100% 0 repeat-y;
+}
+
+div.mod-rounded div.box-3 {
+	padding: 0px 10px 10px 10px;
+	background: #fcfdfe url(module_rounded_bg.png) 0 100% repeat-x;
+	min-height: 20px;
+	overflow: hidden;
+}
+
+div.mod-rounded div.box-b1 {
+	background: url(module_rounded_bl.png) 0 0 no-repeat;
+}
+
+div.mod-rounded div.box-b2 {
+	padding: 0px 10px 0px 10px;
+	background: url(module_rounded_br.png) 100% 0 no-repeat;
+}
+
+div.mod-rounded div.box-b3 {
+	height: 10px;
+	background: url(module_rounded_b.png) 0 0 repeat-x;
+}
+
+div.mod-rounded div.badge-new, div.mod-rounded div.badge-top, div.mod-rounded div.badge-pick {
+	top: 5px;
+	right: 5px;
+}
+
+#headerbar div.mod-rounded div.deepest {
+	height: 50px;
+}
+/***********************/
+span.yoo-login, span.yoo-login span {
+    display: block;
+}
+
+#headerbar span.niftyquick span.yoo-login span.login {
+    width: 268px;
+}
+
+span.niftyquick span.yoo-login span.login {
+    height: 24px;
+    color: #646464;
+}
+
+span.niftyquick span.yoo-login span.login span.username {
+    background: transparent url(username_bg.png) no-repeat scroll 0 0;
+}
+
+span.niftyquick span.yoo-login span.login span.password {
+    background: transparent url(password_bg.png) no-repeat scroll 0 0;
+}
+
+span.niftyquick span.yoo-login span.login span.username, span.niftyquick span.yoo-login span.login span.password {
+    float: left;
+    height: 16px;
+    overflow: hidden;
+    padding: 6px 5px 2px 25px;
+    width: 74px;
+}
+
+span.niftyquick span.yoo-login span.login span.username input, span.niftyquick span.yoo-login span.login span.password input {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    color: #646464;
+    float: left;
+    font-size: 11px;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: medium;
+    padding: 0;
+    width: 100%;
+}
+
+span.niftyquick span.yoo-login span.login span.login-button {
+    margin-right: 0;
+}
+
+span.niftyquick span.yoo-login span.login span.login-button {
+    background: transparent url(button_bg.png) no-repeat scroll 0 0;
+    height: 20px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    width: 50px;
+}
+
+span.niftyquick span.yoo-login span.login span.login-button button {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    color: #646464;
+    cursor: pointer;
+    display: block;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 0;
+    text-transform: lowercase;
+    width: 100%;
+}
+
+span.niftyquick span.yoo-login span.login span.lostpassword, #headerbar span.niftyquick span.yoo-login span.login span.lostusername, #headerbar span.niftyquick span.yoo-login span.login span.registration {
+    margin-top: 5px;
+}
+
+span.niftyquick span.yoo-login span.login span.lostpassword {
+    background: transparent url(lost_password_bg.png) no-repeat scroll 0 0;
+    width: 25px;
+}
+
+span.niftyquick span.yoo-login span.login span.lostpassword a, span.niftyquick span.yoo-login span.login span.lostusername a, span.niftyquick span.yoo-login span.login span.registration a {
+    display: block;
+    height: 20px;
+    width: 100%;
+}
+
+span.niftyquick span.yoo-login span.login span.lostpassword, #headerbar span.niftyquick span.yoo-login span.login span.lostusername, #headerbar span.niftyquick span.yoo-login span.login span.registration {
+    margin-top: 5px;
+}
+
+span.niftyquick span.yoo-login span.login span.lostusername {
+    background: transparent url(lost_username_bg.png) no-repeat scroll 0 0;
+    width: 25px;
+}
+
+span.niftyquick span.yoo-login span.login span.lostpassword, span.niftyquick span.yoo-login span.login span.lostusername, span.niftyquick span.yoo-login span.login span.registration {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+span.niftyquick span.yoo-login span.login span.username, span.niftyquick span.yoo-login span.login span.password, span.niftyquick span.yoo-login span.login span.login-button, span.niftyquick span.yoo-login span.login span.lostpassword, span.niftyquick span.yoo-login span.login span.lostusername, span.niftyquick span.yoo-login span.login span.registration, span.niftyquick span.yoo-login span.logout span.greeting, span.niftyquick span.yoo-login span.logout span.logout-button {
+    float: left;
+    margin-right: 5px;
+    overflow: hidden;
+}

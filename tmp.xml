@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<samlp:Response xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" ID="ddijlapponmjoiobjgmhbgggbleaoffnchapcbfp" IssueInstant="2012-02-13T11:20:12Z" Version="2.0" Destination="https://www.google.com/a/epfc.eu/acs" InResponseTo="idcofdhfcepkceifbjlicphnbnefbpajnmemkbpg">
+	<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+		<ds:SignedInfo>
+			<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/>
+			<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<ds:Reference URI="">
+				<ds:Transforms>
+					<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</ds:Transforms>
+				<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<ds:DigestValue>8fgcPrePA/9K43MTjZCUAGTzU1k=</ds:DigestValue>
+			</ds:Reference>
+		</ds:SignedInfo>
+		<ds:SignatureValue>ebaNSpLSzpaHLrsC7RWVfnHwj/cAwJW7Gdh3fzJMmfpsWL1Zl6PI4Hcny2cz2Vn9QU/PsFJZ7ZXdZT17hbtq1Zkv6FF6/MPkKPRnitihEFVdcGx6fZHWIk3mIAmv4GkdETK7g9tLIVvPc1q4fITtc6sjB8Cx6coCkEAegs4Ze2s=</ds:SignatureValue>
+		<ds:KeyInfo>
+			<ds:KeyValue>
+				<ds:RSAKeyValue>
+					<ds:Modulus>m+i8ISW4SghHVwJQmxt3tp2pMli+6i2Ui92/9gdcVyy/SKdRk94Wt8oRNCmcyI0rDCOWvEafMO9rVuTpb3/CLu3MdnK9cWyzYoJopG2+yNlaIkSMa/ngNdh04sm6yVOnHw4KpJwG3rxOAkYf8u6sREck92iEn8kFW0O1xoqTa7c=</ds:Modulus>
+					<ds:Exponent>AQAB</ds:Exponent>
+				</ds:RSAKeyValue>
+			</ds:KeyValue>
+		</ds:KeyInfo>
+	</ds:Signature>
+	<samlp:Status>
+		<samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+	</samlp:Status>
+	<Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" ID="ihlajhdkpgdapclkdackppjjpcfkhiifbhinbmgk" IssueInstant="2012-02-13T11:20:12Z" Version="2.0">
+		<Issuer/>
+		<Subject>
+			<NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">beletot</NameID>
+			<SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+				<SubjectConfirmationData Recipient="https://www.google.com/a/epfc.eu/acs" NotOnOrAfter="2012-02-13T11:30:12Z" InResponseTo="idcofdhfcepkceifbjlicphnbnefbpajnmemkbpg"/>
+			</SubjectConfirmation>
+		</Subject>
+		<Conditions NotBefore="2012-02-13T11:15:12Z" NotOnOrAfter="2012-02-13T11:30:12Z">
+			<AudienceRestriction>
+				<Audience>https://www.google.com/a/epfc.eu/acs</Audience>
+			</AudienceRestriction>
+		</Conditions>
+		<AuthnStatement AuthnInstant="2012-02-13T11:20:12Z">
+			<AuthnContext>
+				<AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef>
+			</AuthnContext>
+		</AuthnStatement>
+	</Assertion>
+</samlp:Response>

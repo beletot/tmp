@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="auth">
+	<name>Authentication - Simplesamlphp</name>
+	<author>Epfc.eu! Project</author>
+	<creationDate>January 2010</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 All rights reserved.</copyright>
+	<license></license>
+	<authorEmail>bletot@ulb.ac.be</authorEmail>
+	<authorUrl>www.epfc.eu.org</authorUrl>
+	<version>1.0</version>
+	<description>Handles GoogleApps default user authentication</description>
+	<files>
+		<filename plugin="joomla">simplesaml.php</filename>
+	</files>
+	<params/>
+</install>

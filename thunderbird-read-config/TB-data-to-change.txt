@@ -1,0 +1,41 @@
+﻿user_pref("mail.root.imap", "Q:\\bletot\\Thunderbird\\ImapMail");
+user_pref("mail.root.imap-rel", "[ProfD]ImapMail");
+user_pref("mail.root.none", "Q:\\bletot\\Thunderbird\\Mail");
+user_pref("mail.root.none-rel", "[ProfD]Mail");
+user_pref("mail.root.pop3", "Q:\\bletot\\Thunderbird\\Mail");
+user_pref("mail.root.pop3-rel", "[ProfD]Mail");
+
+user_pref("extensions.enabledAddons",
+
+
+user_pref("mail.account.account1.server", "server1");
+user_pref("mail.account.account2.identities", "id1");
+user_pref("mail.account.account2.server", "server2");
+user_pref("mail.account.account4.identities", "id3");
+user_pref("mail.account.account4.server", "server4");
+user_pref("mail.account.account6.identities", "id5");
+user_pref("mail.account.account6.server", "server6");
+user_pref("mail.accountmanager.accounts", "account1,account4,account6,account2");
+user_pref("mail.accountmanager.defaultaccount", "account4");
+user_pref("mail.accountmanager.localfoldersserver", "server1");
+
+
+
+user_pref("mail.smtpserver.smtp1.description", "beletot.epfc.eu");
+user_pref("mail.smtpserver.smtp1.hostname", "smtp.gmail.com");
+user_pref("mail.smtpserver.smtp1.port", 465);
+user_pref("mail.smtpserver.smtp1.try_ssl", 3);
+user_pref("mail.smtpserver.smtp1.username", "beletot@epfc.eu");
+
+
+ 
+/* défini le chemin d'accès au compte */
+
+user_pref("mail.server.server1.directory", "C:\\Users\\bletot\\AppData\\Roaming\\Thunderbird\\Profiles\\628wag4k.default\\ImapMail\\imap.googlemail.com");
+user_pref("mail.server.server1.directory-rel", "[ProfD]ImapMail/imap.googlemail.com");
+
+Vers
+
+user_pref("mail.server.server1.directory", "E:\\AppData\\Roaming\\Thunderbird\\ImapMail\\beletot.epfc.eu");
+user_pref("mail.server.server1.directory-rel", "[ProfD]ImapMail/beletot.epfc.eu");
+

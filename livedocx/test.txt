@@ -1,0 +1,62 @@
+<?php
+
+$nom = '';
+$nomOrigineFichier = 'arnold.doc';
+$nomUnique = 'arnold.pdf';
+
+/* --- GENERATION DU PDF---*/
+// Turn up error reporting
+error_reporting(E_ALL | E_STRICT);
+
+// Turn off WSDL caching
+ini_set('soap.wsdl_cache_enabled', 0);
+
+// Define credentials for LD
+define ('COPIEPDF_USERNAME', 'cocololo');
+define ('COPIEPDF_PASSWORD', 't5rdenn');
+
+
+// SOAP WSDL endpoint
+define('ENDPOINT', 'https://api.livedocx.com/1.2/mailmerge.asmx?WSDL');
+
+// Define timezone
+date_default_timezone_set('Europe/Berlin');
+
+// -----------------------------------------------------------------------------
+//
+// SAMPLE #1 - License Agreement
+//
+print('Début de la conversion de votre fichier...');
+// Instantiate SOAP object and log into LiveDocx
+$soap = new SoapClient(ENDPOINT);
+$soap->LogIn(array(
+    'username' => COPIEPDF_USERNAME , 
+    'password' => COPIEPDF_PASSWORD
+));
+
+// Upload template
+//chdir("document/$nom");
+$data = file_get_contents("$nomOrigineFichier");
+$soap->SetLocalTemplate(array(
+    'template' => base64_encode($data) , 'format' => 'doc'
+));
+
+
+// Build the document
+$soap->CreateDocument();
+
+// Get document as PDF
+$result = $soap->RetrieveDocument(array(
+    'format' => 'pdf'
+));
+
+$data = $result->RetrieveDocumentResult;
+
+file_put_contents("$nomUnique", base64_decode($data));
+
+// Log out (closes connection to backend server)
+$soap->LogOut();
+unset($soap);
+print('DONE.' . PHP_EOL);
+
+?>

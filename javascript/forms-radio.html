@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>New Web Project</title>
+		<script src="mootools/js/mootools-core-1.3-full.js" type="text/javascript"></script>
+		<script src="date.js" type="text/javascript"></script>
+		<script type="text/JavaScript">
+			window.addEvent('domready', function() {
+
+				$('jform_last_school_year8').morph({
+					'opacity' : '0'
+				});
+
+				$$('input[name=jform[last_school_year]]').addEvent('click', function(event) {
+					//$('jform_last_school_year8').set('text', 'not checked');
+					$('jform_last_school_year8').set('disabled','true');
+					$('jform_last_school_year8').morph({
+						'opacity' : '0'
+					});
+				});
+				$('jform_last_school_year7').addEvent('click', function() {
+					$('jform_last_school_year8').removeProperty('disabled');
+					$('jform_last_school_year8').morph({
+						'background-color' : '#E79D35',
+						'border-width' : '1px',
+						'border-style' : 'solid',
+						'border-color' : '#C8C8C8',
+						'color' : '#fff',
+						'opacity' : '1'
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<form class="exportxls" id="" enctype="multipart/form-data" action="send.php" method="post">
+			<fieldset class="radio validate-numeric" id="jform_last_school_year">
+				<input type="radio" value="1" name="jform[last_school_year]" id="jform_last_school_year0" class="" aria-invalid="false">
+				<label for="jform_last_school_year0" class="" aria-invalid="false">Oui</label>
+				<input type="radio" value="2" name="jform[last_school_year]" id="jform_last_school_year1" class="" aria-invalid="false">
+				<label for="jform_last_school_year1" class="" aria-invalid="false">Non</label>
+				<input type="radio" checked="checked" value="3" name="jform[last_school_year]" id="jform_last_school_year2" class="" aria-invalid="false">
+				<label for="jform_last_school_year2" class="" aria-invalid="false">Non</label>
+				<input type="radio" value="4" name="jform[last_school_year]" id="jform_last_school_year3" class="" aria-invalid="false">
+				<label for="jform_last_school_year3" class="" aria-invalid="false">Non</label>
+				<input type="radio" value="5" name="jform[last_school_year]" id="jform_last_school_year4" class="" aria-invalid="false">
+				<label for="jform_last_school_year4" class="" aria-invalid="false">Non</label>
+				<input type="radio" value="6" name="jform[last_school_year]" id="jform_last_school_year5">
+				<label for="jform_last_school_year5">Non</label>
+				<input type="radio" value="7" name="jform[last_school_year]" id="jform_last_school_year6">
+				<label for="jform_last_school_year6">Non</label>
+				<input type="radio" value="8" name="jform[last_school_year]" id="jform_last_school_year7">
+				<label for="jform_last_school_year6">Other</label>
+			</fieldset>
+			<input type="text" maxlength="100" size="30" value="" id="jform_last_school_year8" name="jform[last_school_year_other]">
+			<div id="log"></div>
+			<input type="submit" />
+		</form>
+	</body>
+</html>
+
