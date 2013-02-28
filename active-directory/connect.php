@@ -24,5 +24,4 @@ function check_passwd() {
 	}
 }
 check_passwd();
-//test githup branche full display
 ?>
