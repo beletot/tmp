@@ -1,6 +1,7 @@
 <?php
-
-
+$date = new DateTime('27-02-2013');
+echo $date->format('dm');
+die();
 //1 Hour = 3600000 Milliseconds 
 echo date('d-m-Y h:i',1321347330).'<br />';
 echo date('h:i',1321347330).'<br />';

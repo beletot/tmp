@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>HTML</title>
+		<meta name="author" content="bletot" />
+		<!-- Date: 2013-01-24 -->
+		<script src="js/mootools-core-1.3-full.js" type="text/javascript"></script>
+		<script src="js/mootools-more-1.3-full.js" type="text/javascript"></script>
+		<style>
+			body, img {
+				margin: 0px;
+				padding: 0px;
+			}
+			#accordion {
+				margin: 20px 0 0 170px;
+				max-width: 940px;
+			}
+			#accordion H2 {
+				background: #e41b61;
+				color: white;
+				
+				background: #ffffff;
+				/*border:1px solid #CCCCCC;*/
+				color:black;
+				/*box-shadow: 1px 1px 8px #555;*/
+				
+				
+				cursor: pointer;
+				font: 14px verdana, Arial, sans-serif;
+				line-height: 40px;
+				margin: 0 0 15px 0;
+				padding: 3px 5px 1px;
+			}
+			#accordion .content {
+				background-color: #F4F5F5;
+			}
+			#accordion .content p {
+				margin: 0.5em 0;
+				padding: 0 6px 8px 6px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.addEvent('domready', function() {
+				new Fx.Accordion($('accordion'), '#accordion h2', '#accordion .content', {
+					display : -1
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<img src="images/epfc-header.png"/>
+		<div id="accordion">
+
+			<h2>What is MooTools?</h2>
+			<div class="content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue id justo congue aliquet. Nulla sit amet ante ut dui mattis eleifend. Sed ornare, ipsum at sollicitudin fermentum, lacus odio dictum risus, vel euismod est mauris venenatis magna. Fusce condimentum nisl vitae nibh accumsan elementum. Suspendisse posuere nulla condimentum sem rutrum eu eleifend odio interdum. Etiam in consectetur neque. Cras enim turpis, faucibus vel euismod nec, mollis sit amet mi. Integer ut ipsum ac justo vehicula pulvinar eget in sapien. Nulla ultrices rhoncus urna, vel pharetra nisi molestie nec. Nunc tincidunt, dolor a viverra ullamcorper, libero eros pellentesque justo, sit amet sodales elit nunc sed lectus.
+					Pellentesque id tristique lacus.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue id justo congue aliquet. Nulla sit amet ante ut dui mattis eleifend. Sed ornare, ipsum at sollicitudin fermentum, lacus odio dictum risus, vel euismod est mauris venenatis magna. Fusce condimentum nisl vitae nibh accumsan elementum. Suspendisse posuere nulla condimentum sem rutrum eu eleifend odio interdum. Etiam in consectetur neque. Cras enim turpis, faucibus vel euismod nec, mollis sit amet mi. Integer ut ipsum ac justo vehicula pulvinar eget in sapien. Nulla ultrices rhoncus urna, vel pharetra nisi molestie nec. Nunc tincidunt, dolor a viverra ullamcorper, libero eros pellentesque justo, sit amet sodales elit nunc sed lectus.
+					Pellentesque id tristique lacus.
+				</p>
+				<p>
+					Cras varius eleifend urna. Vestibulum quam orci, tincidunt quis laoreet et, convallis eu ante. Praesent vitae arcu et sapien elementum mollis id pulvinar quam. Phasellus hendrerit euismod venenatis. Quisque lacinia tellus vel nulla eleifend eget feugiat metus interdum. Aenean id aliquam enim. In vitae malesuada justo. Cras nec tellus ante, id malesuada ante. Suspendisse sed libero nulla, quis ultrices lorem. Vestibulum gravida luctus mi, a ullamcorper ante sollicitudin a.
+				</p>
+			</div>
+			<h2>What is MooTools?</h2>
+			<div class="content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue id justo congue aliquet. Nulla sit amet ante ut dui mattis eleifend. Sed ornare, ipsum at sollicitudin fermentum, lacus odio dictum risus, vel euismod est mauris venenatis magna. Fusce condimentum nisl vitae nibh accumsan elementum. Suspendisse posuere nulla condimentum sem rutrum eu eleifend odio interdum. Etiam in consectetur neque. Cras enim turpis, faucibus vel euismod nec, mollis sit amet mi. Integer ut ipsum ac justo vehicula pulvinar eget in sapien. Nulla ultrices rhoncus urna, vel pharetra nisi molestie nec. Nunc tincidunt, dolor a viverra ullamcorper, libero eros pellentesque justo, sit amet sodales elit nunc sed lectus.
+					Pellentesque id tristique lacus. Cras varius eleifend urna. Vestibulum quam orci, tincidunt quis laoreet et, convallis eu ante. Praesent vitae arcu et sapien elementum mollis id pulvinar quam. Phasellus hendrerit euismod venenatis. Quisque lacinia tellus vel nulla eleifend eget feugiat metus interdum. Aenean id aliquam enim. In vitae malesuada justo. Cras nec tellus ante, id malesuada ante. Suspendisse sed libero nulla, quis ultrices lorem. Vestibulum gravida luctus mi, a ullamcorper ante sollicitudin a.
+					Donec consequat dolor feugiat nibh sagittis iaculis. Nulla ac varius orci. Nunc suscipit neque eget nunc malesuada bibendum. Nunc facilisis turpis in tortor congue quis fringilla massa egestas. Fusce luctus ultrices lobortis. Suspendisse vel quam mauris, vel cursus dui. Nulla facilisi. Sed lacinia elementum risus sed fermentum. Fusce tristique lacus nisi. Aenean ullamcorper, justo sed rutrum rhoncus, arcu lacus pulvinar tellus, eu iaculis arcu leo ullamcorper risus. Cras hendrerit placerat leo quis hendrerit. Suspendisse sagittis egestas aliquam. Ut euismod sodales est non venenatis.
+				</p>
+			</div>
+			<h2>What is MooTools?</h2>
+			<div class="content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue id justo congue aliquet. Nulla sit amet ante ut dui mattis eleifend. Sed ornare, ipsum at sollicitudin fermentum, lacus odio dictum risus, vel euismod est mauris venenatis magna. Fusce condimentum nisl vitae nibh accumsan elementum. Suspendisse posuere nulla condimentum sem rutrum eu eleifend odio interdum. Etiam in consectetur neque. Cras enim turpis, faucibus vel euismod nec, mollis sit amet mi. Integer ut ipsum ac justo vehicula pulvinar eget in sapien. Nulla ultrices rhoncus urna, vel pharetra nisi molestie nec. Nunc tincidunt, dolor a viverra ullamcorper, libero eros pellentesque justo, sit amet sodales elit nunc sed lectus.
+					Pellentesque id tristique lacus.
+					<br />
+					Cras varius eleifend urna. Vestibulum quam orci, tincidunt quis laoreet et, convallis eu ante. Praesent vitae arcu et sapien elementum mollis id pulvinar quam. Phasellus hendrerit euismod venenatis. Quisque lacinia tellus vel nulla eleifend eget feugiat metus interdum. Aenean id aliquam enim. In vitae malesuada justo. Cras nec tellus ante, id malesuada ante. Suspendisse sed libero nulla, quis ultrices lorem. Vestibulum gravida luctus mi, a ullamcorper ante sollicitudin a.
+					Donec consequat dolor
+				</p>
+				<p>
+					feugiat nibh sagittis iaculis. Nulla ac varius orci. Nunc suscipit neque eget nunc malesuada bibendum. Nunc facilisis turpis in tortor congue quis fringilla massa egestas. Fusce luctus ultrices lobortis. Suspendisse vel quam mauris, vel cursus dui. Nulla facilisi. Sed lacinia elementum risus sed fermentum. Fusce tristique lacus nisi. Aenean ullamcorper, justo sed rutrum rhoncus, arcu lacus pulvinar tellus, eu iaculis arcu leo ullamcorper risus. Cras hendrerit placerat leo quis hendrerit. Suspendisse sagittis egestas aliquam. Ut euismod sodales est non venenatis.
+				</p>
+			</div>
+			<h2>What is MooTools?</h2>
+			<div class="content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue id justo congue aliquet. Nulla sit amet ante ut dui mattis eleifend. Sed ornare, ipsum at sollicitudin fermentum, lacus odio dictum risus, vel euismod est mauris venenatis magna. Fusce condimentum nisl vitae nibh accumsan elementum. Suspendisse posuere nulla condimentum sem rutrum eu eleifend odio interdum. Etiam in consectetur neque. Cras enim turpis, faucibus vel euismod nec, mollis sit amet mi. Integer ut ipsum ac justo vehicula pulvinar eget in sapien. Nulla ultrices rhoncus urna, vel pharetra nisi molestie nec. Nunc tincidunt, dolor a viverra ullamcorper, libero eros pellentesque justo, sit amet sodales elit nunc sed lectus.
+					Pellentesque id tristique lacus.
+					<br />
+					Cras varius eleifend urna. Vestibulum quam orci, tincidunt quis laoreet et, convallis eu ante. Praesent vitae arcu et sapien elementum mollis id pulvinar quam. Phasellus hendrerit euismod venenatis. Quisque lacinia tellus vel nulla eleifend eget feugiat metus interdum. Aenean id aliquam enim. In vitae malesuada justo. Cras nec tellus ante, id malesuada ante. Suspendisse sed libero nulla, quis ultrices lorem. Vestibulum gravida luctus mi, a ullamcorper ante sollicitudin a.
+					Donec consequat dolor feugiat nibh sagittis iaculis. Nulla ac varius orci. Nunc suscipit neque eget nunc malesuada bibendum. Nunc facilisis turpis in tortor congue quis fringilla massa egestas. Fusce luctus ultrices lobortis. Suspendisse vel quam mauris, vel cursus dui. Nulla facilisi. Sed lacinia elementum risus sed fermentum. Fusce tristique lacus nisi. Aenean ullamcorper, justo sed rutrum rhoncus, arcu lacus pulvinar tellus, eu iaculis arcu leo ullamcorper risus. Cras hendrerit placerat leo quis hendrerit. Suspendisse sagittis egestas aliquam. Ut euismod sodales est non venenatis.
+				</p>
+			</div>
+			<h2>What is MooTools?</h2>
+			<div class="content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue id justo congue aliquet. Nulla sit amet ante ut dui mattis eleifend. Sed ornare, ipsum at sollicitudin fermentum, lacus odio dictum risus, vel euismod est mauris venenatis magna. Fusce condimentum nisl vitae nibh accumsan elementum. Suspendisse posuere nulla condimentum sem rutrum eu eleifend odio interdum. Etiam in consectetur neque. Cras enim turpis, faucibus vel euismod nec, mollis sit amet mi. Integer ut ipsum ac justo vehicula pulvinar eget in sapien. Nulla ultrices rhoncus urna, vel pharetra nisi molestie nec. Nunc tincidunt, dolor a viverra ullamcorper, libero eros pellentesque justo, sit amet sodales elit nunc sed lectus.
+					Pellentesque iqsf dg qksdf qdsgf shqfjksd gfgjqsdg fgsqdjfgjsdgjf gsdhjshjfghj qfds f dsgqd
+					<br />
+					na. Vestibulum quam orci, tincidunt quis laoreet et, convallis eu ante. Praesent vitae arcu et sapien elementum mollis id pulvinar quam. Phasellus hendrerit euismod venenatis. Quisque lacinia tellus vel nulla eleifend eget feugiat metus interdum. Aenean id aliquam enim. In vitae malesuada justo. Cras nec tellus ante, id malesuada ante. Suspendisse sed libero nulla, quis ultrices lorem. Vestibulum gravida luctus mi, a ullamcorper ante sollicitudin a.
+					Donec consequat dolor feugiat nibh sagittis iaculis. Nulla ac varius orci. Nunc suscipit neque eget nunc malesuada bibendum. Nunc facilisis turpis in tortor congue quis fringilla massa egestas. Fusce luctus ultrices lobortis. Suspendisse vel quam mauris, vel cursus dui. Nulla facilisi. Sed lacinia elementum risus sed fermentum. Fusce tristique lacus nisi. Aenean ullamcorper, justo sed rutrum rhoncus, arcu lacus pulvinar tellus, eu iaculis arcu leo ullamcorper risus. Cras hendrerit placerat leo quis hendrerit. Suspendisse sagittis egestas aliquam. Ut euismod sodales est non venenatis.
+				</p>
+			</div>
+			<h2>What is MooTools?</h2>
+			<div class="content">
+				<p>
+					Pellentesque id tristique lacus. Cras varius eleifend urna. Vestibulum quam orci, tincidunt quis laoreet et, convallis eu ante. Praesent vitae arcu et sapien elementum mollis id pulvinar quam. Phasellus hendrerit euismod venenatis. Quisque lacinia tellus vel nulla eleifend eget feugiat metus interdum. Aenean id aliquam enim. In vitae malesuada justo. Cras nec tellus ante, id malesuada ante. Suspendisse sed libero nulla, quis ultrices lorem. Vestibulum gravida luctus mi, a ullamcorper ante sollicitudin a.
+					Donec consequat dolor feugiat nibh sagittis iaculis. Nulla ac varius orci. Nunc suscipit neque eget nunc malesuada bibendum. Nunc facilisis turpis in tortor congue quis fringilla massa egestas. Fusce luctus ultrices lobortis. Suspendisse vel quam mauris, vel cursus dui. Nulla facilisi. Sed lacinia elementum risus sed fermentum. Fusce tristique lacus nisi. Aenean ullamcorper, justo sed rutrum rhoncus, arcu lacus pulvinar tellus, eu iaculis arcu leo ullamcorper risus. Cras hendrerit placerat leo quis hendrerit. Suspendisse sagittis egestas aliquam. Ut euismod sodales est non venenatis.
+				</p>
+			</div>
+			<h2>What is MooTools?</h2>
+			<div class="content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue id justo congue aliquet. Nulla sit amet ante ut dui mattis eleifend. Sed ornare, ipsum at sollicitudin fermentum, lacus odio dictum risus, vel euismod est mauris venenatis magna. Fusce condimentum nisl vitae nibh accumsan elementum. Suspendisse posuere nulla condimentum sem rutrum eu eleifend odio interdum. Etiam in consectetur neque. Cras enim turpis, faucibus vel euismod nec, mollis sit amet mi. Integer ut ipsum ac justo vehicula pulvinar eget in sapien. Nulla ultrices rhoncus urna, vel pharetra nisi molestie nec. Nunc tincidunt, dolor a viverra ullamcorper, libero eros pellentesque justo, sit amet sodales elit nunc sed lectus.
+					Pellentesque id tristique lacus. Cras varius eleifend urna. Vestibulum quam orci, tincidunt quis laoreet et, convallis eu ante. Praesent vitae arcu et sapien elementum mollis id pulvinar quam. Phasellus hendrerit euismod venenatis. Quisque lacinia tellus vel nulla eleifend eget feugiat metus interdum. Aenean id aliquam enim. In vitae malesuada justo. Cras nec tellus ante, id malesuada ante. Suspendisse sed libero nulla, quis ultrices lorem. Vestibulum gravida luctus mi, a ullamcorper ante sollicitudin a.
+					Donec consequat dolor feugiat nibh sagittis iaculis.
+					<br />
+					Nulla ac varius orci. Nunc suscipit neque eget nunc malesuada bibendum. Nunc facilisis turpis in tortor congue quis fringilla massa egestas. Fusce luctus ultrices lobortis. Suspendisse vel quam mauris, vel cursus dui. Nulla facilisi. Sed lacinia elementum risus sed fermentum. Fusce tristique lacus nisi. Aenean ullamcorper, justo sed rutrum rhoncus, arcu lacus pulvinar tellus, eu iaculis arcu leo ullamcorper risus. Cras hendrerit placerat leo quis hendrerit. Suspendisse sagittis egestas aliquam. Ut euismod sodales est non venenatis.
+				</p>
+			</div>
+			<h2>What is MooTools?</h2>
+			<div class="content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue id justo congue aliquet. Nulla sit amet ante ut dui mattis eleifend. Sed ornare, ipsum at sollicitudin fermentum, lacus odio dictum risus, vel euismod est mauris venenatis magna. Fusce condimentum nisl vitae nibh accumsan elementum. Suspendisse posuere nulla condimentum sem rutrum eu eleifend odio interdum. Etiam in consectetur neque. Cras enim turpis, faucibus vel euismod nec, mollis sit amet mi. Integer ut ipsum ac justo vehicula pulvinar eget in sapien. Nulla ultrices rhoncus urna, vel pharetra nisi molestie nec. Nunc tincidunt, dolor a viverra ullamcorper, libero eros pellentesque justo, sit amet sodales elit nunc sed lectus.
+					Pellentesque id tristique lacus. Cras varius eleifend urna. Vestibulum quam orci, tincidunt quis laoreet et, convallis eu ante. Praesent vitae arcu et sapien elementum mollis id pulvinar quam. Phasellus hendrerit euismod venenatis. Quisque lacinia tellus vel nulla eleifend eget feugiat metus interdum. Aenean id aliquam enim. In vitae malesuada justo. Cras nec tellus ante, id malesuada ante. Suspendisse sed libero nulla, quis ultrices lorem. Vestibulum gravida luctus mi, a ullamcorper ante sollicitudin a.
+					Donec consequat dolor feugiat nibh sagittis iaculis.
+					<br />
+					Nulla ac varius orci. Nunc suscipit neque eget nunc malesuada bibendum. Nunc facilisis turpis in tortor congue quis fringilla massa egestas. Fusce luctus ultrices lobortis. Suspendisse vel quam mauris, vel cursus dui. Nulla facilisi. Sed lacinia elementum risus sed fermentum. Fusce tristique lacus nisi. Aenean ullamcorper, justo sed rutrum rhoncus, arcu lacus pulvinar tellus, eu iaculis arcu leo ullamcorper risus. Cras hendrerit placerat leo quis hendrerit. Suspendisse sagittis egestas aliquam. Ut euismod sodales est non venenatis.
+				</p>
+			</div>
+			<h2>What is MooTools?</h2>
+			<div class="content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue id justo congue aliquet. Nulla sit amet ante ut dui mattis eleifend. Sed ornare, ipsum at sollicitudin fermentum, lacus odio dictum risus, vel euismod est mauris venenatis magna. Fusce condimentum nisl vitae nibh accumsan elementum. Suspendisse posuere nulla condimentum sem rutrum eu eleifend odio interdum. Etiam in consectetur neque. Cras enim turpis, faucibus vel euismod nec, mollis sit amet mi. Integer ut ipsum ac justo vehicula pulvinar eget in sapien. Nulla ultrices rhoncus urna, vel pharetra nisi molestie nec. Nunc tincidunt, dolor a viverra ullamcorper, libero eros pellentesque justo, sit amet sodales elit nunc sed lectus.
+					Pellentesque id tristique lacus. Cras varius eleifend urna. Vestibulum quam orci, tincidunt quis laoreet et, convallis eu ante. Praesent vitae arcu et sapien elementum mollis id pulvinar quam. Phasellus hendrerit euismod venenatis. Quisque lacinia tellus vel nulla eleifend eget feugiat metus interdum. Aenean id aliquam enim. In vitae malesuada justo. Cras nec tellus ante, id malesuada ante. Suspendisse sed libero nulla, quis ultrices lorem. Vestibulum gravida luctus mi, a ullamcorper ante sollicitudin a.
+					Donec consequat dolor feugiat nibh sagittis iaculis. Nulla ac varius orci. Nunc suscipit neque eget nunc malesuada bibendum. Nunc facilisis turpis in tortor congue quis fringilla massa egestas. Fusce luctus ultrices lobortis. Suspendisse vel quam mauris, vel cursus dui. Nulla facilisi. Sed lacinia elementum risus sed fermentum. Fusce tristique lacus nisi. Aenean ullamcorper, justo sed rutrum rhoncus, arcu lacus pulvinar tellus, eu iaculis arcu leo ullamcorper risus. Cras hendrerit placerat leo quis hendrerit. Suspendisse sagittis egestas aliquam. Ut euismod sodales est non venenatis.
+				</p>
+			</div>
+
+		</div>
+		<img src="images/epfc-footer.png" />
+	</body>
+</html>
+
